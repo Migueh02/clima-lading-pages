@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "CI=false npm run build",
   "devCommand": "npm start",
-  "installCommand": "npm install",
+  "installCommand": "npm install --legacy-peer-deps",
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "maxLambdaSize": "15mb"
+        "maxLambdaSize": "15mb",
+        "nodeVersion": "18.x"
       }
     }
   ],
@@ -34,7 +35,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/index.tsx"
+      "dest": "/index.html"
     }
   ]
 }
