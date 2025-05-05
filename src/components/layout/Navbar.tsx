@@ -213,9 +213,9 @@ const Navbar: React.FC = () => {
     <>
       <Nav scrolled={scrolled}>
         <Logo $scrolled={scrolled}>
-          <img src="/images/clima logo.png" alt="Clima Logo" />
-          <span>ClimaData</span>
-      </Logo>
+          <img src="/clima logo.png" alt="Clima Logo" />
+          <span>Agroclimatología</span>
+        </Logo>
       
         <MobileMenuButton onClick={toggleMenu}>
           ☰
@@ -224,7 +224,7 @@ const Navbar: React.FC = () => {
         <MenuItems isOpen={isOpen}>
           <CloseButton onClick={closeMenu}>×</CloseButton>
           <MenuItem 
-            href="/" 
+            href="#inicio" 
             $scrolled={scrolled}
             whileHover={{ y: -3 }}
             transition={{ type: 'spring', stiffness: 300 }}
@@ -232,43 +232,37 @@ const Navbar: React.FC = () => {
             Inicio
           </MenuItem>
           <MenuItem 
-            href="/datos" 
+            href="#cultivos" 
             $scrolled={scrolled}
             whileHover={{ y: -3 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            Datos Climáticos
+            Cultivos
           </MenuItem>
           <MenuItem 
-            href="/mapas" 
+            href="#mapa" 
             $scrolled={scrolled}
             whileHover={{ y: -3 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            Mapas
+            Mapa
           </MenuItem>
           <MenuItem 
-            href="/investigacion" 
+            href="#Plantas" 
             $scrolled={scrolled}
             whileHover={{ y: -3 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            Investigación
+            Plantas
           </MenuItem>
           <MenuItem 
-            href="/noticias" 
+            href="#Herramientas" 
             $scrolled={scrolled}
             whileHover={{ y: -3 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            Noticias
+            Herramientas
           </MenuItem>
-          <ActionButton
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Acceso
-          </ActionButton>
         </MenuItems>
       </Nav>
       

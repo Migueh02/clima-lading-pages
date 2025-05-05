@@ -107,7 +107,6 @@ const FooterLogo = styled.div`
   margin-bottom: 1.5rem;
   
   img {
-    width: 50px;
     height: 50px;
     margin-right: 0.8rem;
   }
@@ -217,18 +216,12 @@ const FooterBottom = styled.div`
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <FooterTop>
-        <NewsletterForm>
-          <NewsletterInput type="email" placeholder="Suscríbete a nuestro boletín climático" />
-          <NewsletterButton type="submit">Suscribir</NewsletterButton>
-        </NewsletterForm>
-      </FooterTop>
       
       <FooterContent>
         <FooterColumn>
           <FooterLogo>
-            <img src="/images/clima-logo.png" alt="Clima Logo" />
-            <span>ClimaData</span>
+            <img src="/clima logo.png" alt="Clima Logo" />
+            <span>Agroclimatología</span>
           </FooterLogo>
           <FooterText>
             Proporcionamos información climática precisa y análisis científicos para ayudar a las personas y organizaciones a entender y adaptarse a los cambios climáticos.
@@ -272,34 +265,38 @@ const Footer: React.FC = () => {
         <FooterColumn>
           <FooterTitle>Enlaces Rápidos</FooterTitle>
           <QuickLinks>
-            <QuickLink><a href="/datos-climaticos">Datos Climáticos</a></QuickLink>
-            <QuickLink><a href="/mapas-interactivos">Mapas Interactivos</a></QuickLink>
-            <QuickLink><a href="/previsiones">Previsiones a Largo Plazo</a></QuickLink>
-            <QuickLink><a href="/investigacion">Investigación Científica</a></QuickLink>
-            <QuickLink><a href="/eventos-meteorologicos">Eventos Meteorológicos</a></QuickLink>
-            <QuickLink><a href="/calentamiento-global">Calentamiento Global</a></QuickLink>
+            <QuickLink><a href="#inicio">Inicio</a></QuickLink>
+            <QuickLink><a href="#cultivos">Cultivos</a></QuickLink>
+            <QuickLink><a href="#mapa">Mapa</a></QuickLink>
+            <QuickLink><a href="#Plantas">Plantas</a></QuickLink>
+            <QuickLink><a href="#Herramientas">Herramientas</a></QuickLink>
           </QuickLinks>
         </FooterColumn>
         
         <FooterColumn>
-          <FooterTitle>Contacto</FooterTitle>
+          <FooterTitle>Miembros</FooterTitle>
           <ContactInfo>
             <ContactItem>
+              <span>👤</span>
+              <p>Juan Nicolas Gil Ramirez</p>
+            </ContactItem>
+            <ContactItem>
+              <span>👤</span>
+              <p>Jhon Francisco Briceño Calderón</p>
+            </ContactItem>
+            <ContactItem>
+              <span>👤</span>
+              <p>Nicolas Estiven Barahona Delgado</p>
+            </ContactItem>
+            <ContactItem>
+              <span>👤</span>
+              <p>Diego Felipe Pedroza Gonzales</p>
+            </ContactItem>
+            <ContactItem>
               <span>📍</span>
-              <p>Av. Científica 1234, Instituto Climático</p>
-            </ContactItem>
-            <ContactItem>
-              <span>✉️</span>
-              <p>info@climadata.com</p>
-            </ContactItem>
-            <ContactItem>
-              <span>📞</span>
-              <p>+34 123 456 789</p>
+              <p>Granja Agroecológica Uniminuto</p>
             </ContactItem>
           </ContactInfo>
-          <FooterText>
-            También puedes encontrarnos en organizaciones climáticas internacionales y eventos científicos globales.
-          </FooterText>
         </FooterColumn>
       </FooterContent>
       

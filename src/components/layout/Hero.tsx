@@ -14,7 +14,7 @@ const HeroSection = styled.div`
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url('/images/earth-climate-crisis.jpeg');
+  background-image: url('/images/Clima y Cultivos.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -144,10 +144,10 @@ const ScrollIcon = styled(motion.div)`
 
 const Hero: React.FC = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="inicio">
       <HeroSection>
       <Content>
-        <Title
+        <Title 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}

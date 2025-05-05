@@ -180,8 +180,8 @@ const LocationSection = styled.div`
 const SeedingDesign: React.FC = () => {
   return (
     <SeedingContainer>
-      <ContentWrapper>
-        <SectionTitle
+      <ContentWrapper id="cultivos">
+        <SectionTitle 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -290,7 +290,7 @@ const SeedingDesign: React.FC = () => {
         </DesignSection>
         
         <LocationSection>
-          <FeatureTitle
+          <FeatureTitle id="mapa"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

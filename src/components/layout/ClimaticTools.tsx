@@ -405,7 +405,7 @@ const ClimaticTools: React.FC = () => {
   
   return (
     <ToolsSection>
-      <ToolsTitle>Nuestras Herramientas Climáticas</ToolsTitle>
+      <ToolsTitle id="Herramientas">Nuestras Herramientas Climáticas</ToolsTitle>
       <ToolsSubtitle>Basadas en Fedearroz y Meteoblue</ToolsSubtitle>
       <ToolsGrid>
         {tools.map((tool, index) => (
