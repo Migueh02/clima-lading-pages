@@ -372,7 +372,7 @@ const AgroClimatology: React.FC = () => {
     }, 5000);
     
     return () => clearInterval(interval);
-  }, [currentSlide]);
+  }, [nextSlide]);
   
   const slideVariants = {
     initial: (direction: number) => ({
@@ -500,4 +500,4 @@ const AgroClimatology: React.FC = () => {
   );
 };
 
-export default AgroClimatology; 
+export default AgroClimatology;
